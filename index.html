@@ -3,73 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
+    <title>First Aid Info</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
+            background-color: black;
             color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        nav {
-            background-color: #333;
-        }
-        nav ul {
-            list-style-type: none;
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+            height: 100vh;
             overflow: hidden;
         }
-        nav ul li {
-            float: left;
+        .cross {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            background-image: url('https://i.imgur.com/h22mhKK.jpeg');
+            background-size: cover;
         }
-        nav ul li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            background-color: #111;
-        }
-        main {
+        .info-box {
+            width: 80%;
+            height: 70%;
+            margin: auto;
+            margin-top: 50px;
             padding: 20px;
-        }
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow-y: scroll;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Home</h2>
-        <p>This is the main content area. You can add your content here.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Simple Website</p>
-    </footer>
+    <div class="cross"></div>
+    <div class="info-box">
+        <h2>First Aid Information</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod nisi at erat tempus, ac eleifend ex tristique. Suspendisse potenti. Nullam hendrerit metus sit amet nisl aliquam, nec luctus leo auctor. Proin euismod magna ut nisl lacinia, in aliquam sapien consectetur. Integer volutpat dolor sit amet justo dictum, non accumsan augue hendrerit. Nullam pharetra metus nec tortor sodales, sit amet suscipit sem vehicula. Vivamus dictum elit ac ex viverra, et convallis leo blandit. Integer aliquet nunc eu turpis dictum, et malesuada justo laoreet. Duis vitae urna et mi lacinia sodales. Aliquam erat volutpat. Proin euismod nulla nec metus cursus, non vulputate mi placerat.</p>
+        <p>Curabitur dapibus, lorem et luctus tincidunt, metus arcu viverra ligula, in scelerisque mi est a nisi. Cras blandit tincidunt ligula, sit amet laoreet libero venenatis non. Nullam sit amet semper elit. Pellentesque vehicula justo et neque tincidunt lacinia. Nam sed tristique lectus. Donec et enim ac erat volutpat dictum. Maecenas interdum nibh a velit finibus, quis bibendum lacus consectetur. Aliquam erat volutpat. Nullam in risus nec orci posuere aliquet. Aliquam euismod ultricies urna, a scelerisque felis dictum ac.</p>
+        <p>Donec et libero ac urna auctor ullamcorper. Praesent eget eros sit amet nisi condimentum sodales in quis arcu. Nulla non ipsum ex. In porttitor bibendum magna non placerat. Duis sit amet augue leo. Nam sed sapien at ipsum ultricies dictum. Vivamus venenatis odio risus, at viverra libero varius id. Proin bibendum ipsum a nulla efficitur, et facilisis libero volutpat. Nulla et nisi felis. Nulla in nisi mi. Integer vehicula, lectus id consequat aliquam, arcu dolor scelerisque leo, sed iaculis lectus leo ac magna.</p>
+    </div>
 </body>
 </html>
